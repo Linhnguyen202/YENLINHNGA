@@ -630,10 +630,12 @@
     font-size: 1.4rem;
 }
 .person-order{
+    transition: top .5s ease-in-out,bottom .5s ease-in-out,opacity .5s ease-in-out;
     display: flex;
     align-items: center;
     overflow: hidden;
-    top: 15px;
+    opacity: 1;
+    top: -162px;
     width: 200px;
     border-radius: 20px;
     right: auto;
@@ -643,6 +645,10 @@
     position: fixed;
     z-index: 90000050;
     margin-left: calc((100% - 420px) / 2);
+}
+.person-order.active{
+    opacity: 1;
+    top: 15px;
 }
 .person-order img{
     position: relative;

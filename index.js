@@ -8,9 +8,32 @@ const WardSelecr = document.querySelector('#WardSelecr')
 const btnBuy = document.querySelector('.BuyNow-btn')
 const buyForm = document.querySelector('#form-order')
 const btnOrder = document.querySelector('.btn-tag')
+const personOrder = document.querySelector('.person-order')
 let city = []
 let district = []
 let ward = []
+let person = [
+  {
+    id:1,
+    name:"simple"
+  },
+  {
+    id:2,
+    name:"glave"
+  },
+  {
+    id:3,
+    name:"Boomble"
+  },
+  {
+    id:4,
+    name:"Device"
+  },
+  {
+    id:5,
+    name:"Stewie2k"
+  }
+]
 const newDay = 'June 20, 2022'
 function timeCountDown() {
     const nowDate = new Date().getTime();
@@ -90,3 +113,14 @@ btnOrder.addEventListener('click',()=>{
     behavior: 'smooth'
   });
 })
+setInterval(()=>{
+  console.log(123)
+  if(personOrder.classList.contains('active')){
+    personOrder.classList.remove('active')
+
+  }
+  else{
+    personOrder.classList.add('active')
+  }
+  
+},1000)

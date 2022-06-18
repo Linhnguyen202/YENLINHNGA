@@ -141,7 +141,7 @@ ul li{
     background-color: var(--text-color);
     width: 57px;
     height: 57px;
-    top: 15px;
+    bottom: 15px;
     left: auto;
     right: 8px;
     position: fixed;
