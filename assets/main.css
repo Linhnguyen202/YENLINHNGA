@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 :root{
     --main-color:rgba(230, 159, 159, 1.0);
     --text-color:rgb(204, 35, 26);
@@ -12,7 +12,7 @@
   
 }
 html{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Philosopher', sans-serif;
     font-size:62.5%;
     line-height: 1.6rem;
     scroll-behavior: smooth;
@@ -32,6 +32,18 @@ a{
 ul li{
     text-decoration: none;
     list-style: none;
+}
+.opacity{
+    background-color: black;
+    opacity: 0.3;
+    position: absolute;
+    inset: 0;
+}
+.opcity-white{
+    position: absolute;
+    background-color: white;
+    opacity: 0.8;
+    inset: 0;
 }
 .container{
     margin: 0 auto;
@@ -129,9 +141,8 @@ ul li{
     background-color: var(--text-color);
     width: 57px;
     height: 57px;
-    top: auto;
+    top: 15px;
     left: auto;
-    bottom: 15px;
     right: 8px;
     position: fixed;
     z-index: 90000050;

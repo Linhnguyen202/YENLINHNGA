@@ -34,7 +34,7 @@
 .first-content{
     position: relative;
     margin-top: 57px;
-    height:  500.821px;
+    height:  430.821px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 .main-first{
@@ -46,7 +46,7 @@
 }
 .main-banner-content{
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
 }
 .main-first .banner-main{
     position: absolute;
@@ -84,6 +84,29 @@
     -webkit-text-stroke-width: 0px;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation-name: fadeInLeft;
+    -webkit-animation-name: fadeInLeft;
+    animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    animation-duration: 1.3s;
+    -webkit-animation-duration: 1.3s;
+    animation-iteration-count: 1;
+    -webkit-animation-iteration-count: 1;
+}
+.banner-second{
+    position: absolute;
+    bottom: 10px;
+    margin-top: 10px;
+    display: inline-block;
+    background-color: white;
+    color: #e52d27;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-style: italic;
+    letter-spacing: 8px;
+    line-height: 1.4;
     animation-name: fadeInLeft;
     -webkit-animation-name: fadeInLeft;
     animation-delay: 0s;
@@ -136,8 +159,8 @@
 }
 .content-detail span{
     display: block;
-    font-size: 1.6rem;
-    line-height: 2.5rem;
+    font-size: 2rem;
+    line-height: 2.6rem;
     text-transform: uppercase;
     color: rgb(165, 52, 52);
     margin-bottom: 10px;
@@ -373,7 +396,7 @@
     cursor: pointer;
 }
 .content-policy{
-    background-color: #a0cab7;
+    background-color: #f6d65b;
     padding: 20px;
 }
 .content-policy>h3{
@@ -605,4 +628,34 @@
 }
 .input-box.checkbox label{
     font-size: 1.4rem;
+}
+.person-order{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    top: 15px;
+    width: 200px;
+    border-radius: 20px;
+    right: auto;
+    left: 8px;
+    gap: 5px;
+    padding: 5px 10px;
+    position: fixed;
+    z-index: 90000050;
+    margin-left: calc((100% - 420px) / 2);
+}
+.person-order img{
+    position: relative;
+    z-index: 10;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+}
+.person-order .content{
+    position: relative;
+    z-index: 10;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
