@@ -1,0 +1,150 @@
+.section1{
+    background-size: cover;
+    background-attachment: scroll;
+    background-origin: content-box;
+    background-image: url('https://w.ladicdn.com/s768x392/57b167c9ca57d39c18a1c57c/o6yj7j0.jpg');
+    background-position: left top;
+    background-repeat: no-repeat;
+    z-index: 1;
+    height: 392px;
+    position: relative;
+}
+.section-overlay{
+    background-color: rgba(191, 93, 4, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+.section-logo{
+    position: absolute;
+    width: 89px;
+    height: 89px;
+    top: 68px;
+    left: 177.5px;
+    animation-name: flash;
+    -webkit-animation-name: flash;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+.section-logo img{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.section-header{
+    position: absolute;
+    width: 229px;
+    top: 19px;
+    left: 107.5px
+}
+.section-header h3{
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    text-align: center;
+    letter-spacing: 4px;
+    line-height: 1.2;
+}
+.section-thanks{
+    position: absolute;
+    width: 355px;
+    top: 149.5px;
+    left: 32px;
+    font-family: "Paytone One", sans-serif;
+    color: rgb(255, 214, 0);
+    font-size: 52px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0px;
+    line-height: 1;
+    -webkit-text-stroke: 1px rgb(194, 47, 0);
+}
+.section-success{
+    width: 360px;
+    top: 209.5px;
+    left: 38px;
+    position: absolute;
+}
+.section-success h3{
+    width: 100%;
+    display: inline-block;
+    background-size: cover;
+    background-position: center center;
+    font-family: "Quicksand", sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.2;   
+    animation-name: flash;
+    -webkit-animation-name: flash;
+    animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    animation-duration: 2s;
+    -webkit-animation-duration: 2s;
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+.lady-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    width: 94.8px;
+    height: 5px;
+    top: 231.5px;
+    left: 162.1px;
+    background: linear-gradient(180deg, #fdfbfb, #eaedee);
+    border-radius: 4px;
+}
+.section-detail{
+    width: 337px;
+    top: 243px;
+    left: 32px;
+    position: absolute;
+}
+.section-detail p{
+    width: 100%;
+    display: inline-block;
+    color: rgb(3, 23, 42);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.6;
+}
+.section-detail span{
+    background-color: rgb(255, 214, 0);
+}
+.main{
+    margin: 0 auto;
+    position: relative;
+    height: 507px;
+}
+.main-background{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    overflow: hidden;
+    background-color: rgb(234, 214, 214);
+}
+.main-container{
+    position: relative;
+    margin: 0 auto;
+    height: 100%;
+
+}
+
+
+.main-image{
+   padding: 20px 10px;
+}
