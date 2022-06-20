@@ -153,7 +153,7 @@ let list = listDataCall.map((item)=>{
   
       <h3>${item.name}</h3>
       <span>${item.phone}</span>
-      <span>Đặt ${Math.floor(Math.random() * 20) + 1} sản phẩm Yến Tinh Chế</span>
+      <span>Đặt ${Math.floor(Math.random() * 4) + 1} sản phẩm Yến Tinh Chế</span>
 `
 })
 let i = 0
