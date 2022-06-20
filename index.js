@@ -15,26 +15,56 @@ let ward = []
 let listDataCall = [
   {
     id:1,
-    name:"simple"
+    name:"Ngọc Hà",
+    phone: "0387 xxx 482",
+    img: "https://kenh14cdn.com/2020/9/27/img3814-16008495660052057963035-16012244314321556076455.jpg"
   },
   {
     id:2,
-    name:"glave"
+    name:"Phương Thúy",
+    phone: "0367 xxx 234",
+    img: "https://cdn.baogiaothong.vn/files/nga.dinh/2015/04/18/hoa-hau-thu-thao-lam-banh-6-0746.jpg"
   },
   {
     id:3,
-    name:"Boomble"
+    name:"Khánh Nhi",
+    phone: "0349 xxx 835",
+    img: "https://photo-cms-kienthuc.zadn.vn/zoom/800/uploaded/bientapkienthuc/2016_12_09/son9-12/newfolder4/su-that-phia-sau-co-gai-viet-xinh-dep-van-nguoi-me.jpg"
   },
   {
     id:4,
-    name:"Device"
+    name:"Mỹ Tâm",
+    phone: "0349 xxx 311",
+    img: "https://luv.vn/wp-content/uploads/2021/06/hinh-anh-gai-viet-nam-xinh-dep-20.jpg"
   },
   {
     id:5,
-    name:"Stewie2k"
+    name:"Minh Anh",
+    phone: "0398 xxx 434",
+    img: "https://i.pinimg.com/736x/03/8a/84/038a84602069d615eb54b5205bf5307d.jpg"
+  },
+  {
+    id:6,
+    name:"Bảo Vy",
+    phone: "0364 xxx 050",
+    img: "https://cdn.discordapp.com/attachments/818734712461721611/988440476543778866/gaixinh.jpg"
+  },
+  {
+    id:7,
+    name:"Khả Hân",
+    phone: "0342 xxx 121",
+    img: "https://cdn.discordapp.com/attachments/818734712461721611/988440559293202442/gaixinh.jpg"
+  },
+  {
+    id:8,
+    name:"Linh Chi",
+    phone: "0375 xxx 626",
+    img: "https://cdn.discordapp.com/attachments/818734712461721611/988440688217714748/gaixinh.jpg"
   }
 ]
-const newDay = 'June 20, 2022'
+
+const newDay = new Date();
+newDay.setDate(newDay.getDate() + 3);
 function timeCountDown() {
     const nowDate = new Date().getTime();
     const newYearDate = new Date(newDay).getTime();
@@ -113,15 +143,17 @@ btnOrder.addEventListener('click',()=>{
     behavior: 'smooth'
   });
 })
+
 let list = listDataCall.map((item)=>{
+  let randomIdx = Math.floor(Math.random() * 20) + 1;
   return `
   <div class="opcity-white"></div>
-  <img src="http://gamesync.us/wp-content/uploads/2018/05/Simple-NaVi.jpeg" alt="">
+  <img src="${item.img}" alt="">
   <div class="content">
   
       <h3>${item.name}</h3>
-      <span>098 xxx 8599</span>
-      <span>Đặt Hàng 4</span>
+      <span>${item.phone}</span>
+      <span>Đặt ${Math.floor(Math.random() * 20) + 1} sản phẩm Yến Tinh Chế</span>
 `
 })
 let i = 0
