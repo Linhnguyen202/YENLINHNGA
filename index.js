@@ -12,7 +12,7 @@ const personOrder = document.querySelector('.person-order')
 let city = []
 let district = []
 let ward = []
-let person = [
+let listDataCall = [
   {
     id:1,
     name:"simple"
@@ -113,14 +113,32 @@ btnOrder.addEventListener('click',()=>{
     behavior: 'smooth'
   });
 })
+let list = listDataCall.map((item)=>{
+  return `
+  <div class="opcity-white"></div>
+  <img src="http://gamesync.us/wp-content/uploads/2018/05/Simple-NaVi.jpeg" alt="">
+  <div class="content">
+  
+      <h3>${item.name}</h3>
+      <span>098 xxx 8599</span>
+      <span>Đặt Hàng 4</span>
+`
+})
+let i = 0
 setInterval(()=>{
-  console.log(123)
   if(personOrder.classList.contains('active')){
+   
     personOrder.classList.remove('active')
-
+    personOrder.innerHTML = ""
+  
   }
   else{
+    personOrder.innerHTML = list[i];
     personOrder.classList.add('active')
+    i++
+  }
+  if(i == list.length){
+    i = 0
   }
   
-},1000)
+},2000)
